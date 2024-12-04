@@ -16,7 +16,7 @@ html {
 
 body {
   background: #03192E;
-  color: #FFF;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
@@ -42,21 +42,31 @@ a:hover, button:hover {
 
 .navbar {
   list-style-type: none;
-  padding: 5px;
+  padding: 40px; /* Verminderde padding om ruimte boven te creëren */
+  background-color: #322d2d9b;
+  margin-top: -10px; /* Verschuift de navbar naar boven */
+}
+
+.navbar .nav-item {
+  padding: 2px 25px;  /* Verhoogde padding */
+  font-size: 18px;     /* Vergrote tekst */
+  line-height: 20px;   /* Verticaal gecentreerde tekst */
+  margin-top: -5px;    /* Verschuift de nav-items naar boven */
 }
 
 .navbar .nav-item:not(:last-child) {
   float: left;
-  padding: 10px;
 }
-
 
 .navbar .nav-item:last-child {
   float: right;
-  padding: 10px 15px;
+  padding: 5px 15px;  /* Verhoogde padding specifiek voor het laatste item */
+  font-size: 18px;     /* Vergrote tekst voor laatste item */
+  line-height: 30px;   /* Verticaal gecentreerde tekst */
   margin: 10px;
   background-color: #F47850;
   border-radius: 10px;
+  margin-top: -15px;    /* Verschuift het laatste item naar boven */
 }
 
 .hero-section {
@@ -66,7 +76,6 @@ a:hover, button:hover {
   background-size: cover;
   padding: 16.8em 0 14.8em 0;
   border-radius: 0 0 50px 50px;
-
 }
 
 .hero-title {
@@ -79,13 +88,13 @@ a:hover, button:hover {
 
 .hero-btn {
   background: linear-gradient(45deg, #F47850, #FFA93A);
+  padding: 20px 40px;
 }
 
 .s-m-section {
   background: linear-gradient(45deg, #F47850, #FFA93A);
   padding: 20px;
 }
-
 
 .s-m-title {
   margin: 20px;
@@ -177,7 +186,6 @@ a:hover, button:hover {
   .container {
     width: 1170px;
   }
-
 }
 
 @media (min-width: 576px) {
@@ -209,8 +217,8 @@ a:hover, button:hover {
 @media (min-width: 992px) {
   .card {
     -ms-flex: 0 0 45%;
-     flex: 0 0 45%; 
-     max-width: 45%;
+    flex: 0 0 45%;
+    max-width: 45%;
   }
   .statics-rows {
     flex: 33.33%;
