@@ -146,15 +146,28 @@ a:hover, button:hover {
 
 .feutures-section {
   padding: 85px 60px;
+  background-color: #313338;
   background-image: url("./img/wave.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
 }
 
-.feutures-card {
-  padding: 15px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the content */
 }
+
+.feutures-card {
+  flex: 0 0 45%; /* Makes the cards take 45% of the row's width */
+  max-width: 45%;
+  margin: 15px; /* Adds spacing between cards */
+  text-align: center;
+}
+
+
+
 
 .row {
   display: -ms-flexbox;
