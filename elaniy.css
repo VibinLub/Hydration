@@ -1,0 +1,51 @@
+        /* Zorg ervoor dat het hele scherm wordt gebruikt */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Flex container om inhoud te spreiden */
+        body {
+            background-color: #201e1e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        li {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            text-align: left;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .navitem {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1; /* Zorgt ervoor dat de main-sectie de resterende ruimte vult */
+            padding: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
