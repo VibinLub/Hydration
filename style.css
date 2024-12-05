@@ -166,7 +166,9 @@ a:hover, button:hover {
   text-align: center;
 }
 
-
+.footer {
+  padding-top: 25px;
+}
 
 
 .row {
